@@ -1,7 +1,7 @@
-name: radek.io
-title: Radek Pazdera
-description: "by Radek Pazdera"
-meta_description: "Programming, open-source and tech."
+name: brbsix.github.io
+title: brbsix.github.io
+description: 'by Six'
+meta_description: 'open source life'
 
 markdown: kramdown
 highligher: true
@@ -10,17 +10,22 @@ timezone: America/Los_Angeles
 future: true
 
 # Details for the RSS feed generator
-url:            'http://radek.io'
-baseurl:        '/'
-author:         'Radek Pazdera'
+url: 'http://brbsix.github.io'
+baseurl: '/'
 
-email:          'me@radek.io'
-twitter:        'radekpazdera'
-github:         'pazdera'
-linkedin:       'pazdera'
-gplus:          '+RadekPazdera'
+author:
+  name: Six
+  avatar: /assets/images/avatar.png
+  email: brbsix@gmail.com
+  github: brbsix
+  stackoverflow: users/4117209/six
 
-disqus_shortname: linuxwell
+disqus_shortname: brbsix
+google_analytics: UA-58772616-1
+
+mailchimp:
+  subscribe: //radek.us10.list-manage.com/subscribe/post?u=8aed428a847b6d5b297a928ba&amp;id=a6058b8be5
+  unsubscribe: http://radek.us10.list-manage2.com/unsubscribe?u=8aed428a847b6d5b297a928ba&id=a6058b8be5
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:year/:month/:day/:title/
