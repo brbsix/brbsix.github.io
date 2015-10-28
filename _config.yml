@@ -7,7 +7,7 @@ markdown: kramdown
 highligher: true
 paginate: 100
 timezone: America/Los_Angeles
-future:   true
+future: true
 
 # Details for the RSS feed generator
 url:            'http://radek.io'
@@ -23,14 +23,14 @@ gplus:          '+RadekPazdera'
 disqus_shortname: linuxwell
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 exclude:
-  - "bower_components"
-  - "bower.json"
-  - "node_modules"
-  - "package.json"
-  - "gulpfile.js"
+  - 'bower_components'
+  - 'bower.json'
+  - 'gulpfile.js'
+  - 'node_modules'
+  - 'package.json'
   - 'vendor'
 
 gems:
@@ -42,8 +42,9 @@ collections:
     permalink: '/p/:path/'
 
 defaults:
-  - scope:
-      path: ""
+  -
+    scope:
+      path: ''  # empty string for all files
       type: short_urls
     values:
       layout: redirect
