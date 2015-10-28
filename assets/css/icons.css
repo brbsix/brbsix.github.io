@@ -52,4 +52,9 @@
 .icon-linkedin:before {
 	content: "\eac9";
 }
-
+.icon-key:before {
+	content: "\e900";
+}
+.icon-stackoverflow:before {
+	content: "\e901";
+}

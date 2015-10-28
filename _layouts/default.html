@@ -31,11 +31,11 @@
     <footer class="site-footer">
         <div class="inner">
             <section class="icons">
-                <a class="icon-mail" href="mailto:{{ site.email }}"></a>
-                <a class="icon-twitter" href="https://twitter.com/{{ site.twitter }}"></a>
-                <a class="icon-github" href="https://github.com/{{ site.github }}"></a>
-                <a class="icon-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin }}"></a>
-                <a class="icon-google-plus" href="https://plus.google.com/{{ site.gplus }}?rel=author"></a>
+                <a class="icon-mail" href="mailto:{{ site.author.email }}" title="Email me"></a>
+                <a class="icon-github" href="https://github.com/{{ site.author.github }}" title="GitHub"></a>
+                <a class="icon-stackoverflow" href="https://stackoverflow.com/{{ site.author.stackoverflow }}" title="StackOverflow"></a>
+                <a class="icon-key" href="{{ site.baseurl }}assets/files/gpg.pub" title="GPG Public Key"></a>
+                <a class="icon-feed" href="{{ site.baseurl }}rss.xml" title="RSS"></a>
             </section>
             <section class="copyright">Copyright <a href="{{ site.baseurl }}">{{ site.author }}</a> &copy; {{page.date | date: "%y" }} &bull; All rights reserved.</section>
         </div>
