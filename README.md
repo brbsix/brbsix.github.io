@@ -1,8 +1,1 @@
-# broken.build
-
-These are the sources of the [broken.build website](http://broken.build). The
-theme is based on Rosario's port of the Ghost default Casper theme. I added
-some minor things to it and of course my content.
-
-The original Kasper Jekyll theme is available
-[here](https://github.com/rosario/kasper).
+This theme is based on Radek Pazdera's theme which was built upon Rosario's [Kasper Jekyll theme](https://github.com/rosario/kasper) which is a port of Ghost's default Casper theme.
