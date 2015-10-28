@@ -6,7 +6,7 @@ meta_description: "Programming, open-source and tech."
 markdown: kramdown
 highligher: true
 paginate: 100
-timezone: UK/London
+timezone: America/Los_Angeles
 future:   true
 
 # Details for the RSS feed generator
