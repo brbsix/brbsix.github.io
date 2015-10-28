@@ -948,11 +948,11 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .site-footer .icons .icon-mail:hover {
-    color: #F0E12C;
+    color: #FFFFFF;
 }
 
 .site-footer .icons .icon-github:hover {
-    color: #171515;
+    color: #FFFFFF;
 }
 
 .site-footer .icons .icon-linkedin:hover {
@@ -961,6 +961,18 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-footer .icons .icon-google-plus:hover {
     color: #C63D2D;
+}
+
+.site-footer .icons .icon-feed:hover {
+    color: #FFFFFF;
+}
+
+.site-footer .icons .icon-key:hover {
+    color: #FFFFFF;
+}
+
+.site-footer .icons .icon-stackoverflow:hover {
+    color: #FFFFFF;
 }
 
 .site-footer .copyright, .site-footer .poweredby {
