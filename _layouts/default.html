@@ -37,7 +37,7 @@
                 <a class="icon-key" href="{{ site.baseurl }}assets/files/gpg.pub" title="GPG Public Key"></a>
                 <a class="icon-feed" href="{{ site.baseurl }}rss.xml" title="RSS"></a>
             </section>
-            <section class="copyright">Copyright <a href="{{ site.baseurl }}">{{ site.author }}</a> &copy; {{page.date | date: "%y" }} &bull; All rights reserved.</section>
+            <section class="copyright">Copyright <a href="{{ site.baseurl }}about">{{ site.author.name }}</a>{% if page.date %} &copy; {{ page.date | date: '%Y' }}{% endif %} &bull; All rights reserved.</section>
         </div>
     </footer>
 
