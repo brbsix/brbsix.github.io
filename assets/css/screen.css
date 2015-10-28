@@ -330,7 +330,7 @@ margin on the iframe, cause it breaks stuff. */
     margin-bottom: 4rem;
     text-align: center;
     color: #50585D;
-    background: #3CADE8 no-repeat center center;
+    background: #333333 no-repeat center center;
     background-size: cover;
     /*border-bottom: #EBF2F6 4px solid;*/
 }
