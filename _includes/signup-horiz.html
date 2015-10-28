@@ -1,5 +1,5 @@
 <div id="mc_embed_signup" class="signup-form-horiz">
-    <form action="//radek.us10.list-manage.com/subscribe/post?u=8aed428a847b6d5b297a928ba&amp;id=a6058b8be5"
+    <form action="{{ mailchimp.subscribe }}"
           method="post" id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
           class="validate" target="_blank">
@@ -19,7 +19,7 @@
             </li>
             </ul>
             <div class="conditions">
-                I won't send you any spam. <a href="http://radek.us10.list-manage2.com/unsubscribe?u=8aed428a847b6d5b297a928ba&id=a6058b8be5">Unsubscribe</a> at any time.
+                I won't send you any spam. <a href="{{ mailchimp.unsubscribe }}">Unsubscribe</a> at any time.
             </div>
             <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
