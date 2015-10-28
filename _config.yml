@@ -24,8 +24,8 @@ disqus_shortname: brbsix
 google_analytics: UA-58772616-1
 
 mailchimp:
-  subscribe: //radek.us10.list-manage.com/subscribe/post?u=8aed428a847b6d5b297a928ba&amp;id=a6058b8be5
-  unsubscribe: http://radek.us10.list-manage2.com/unsubscribe?u=8aed428a847b6d5b297a928ba&id=a6058b8be5
+  subscribe: //github.us12.list-manage.com/subscribe/post?u=bf693d7fc1edc4b69e240d26e&amp;id=9e419f8045
+  unsubscribe: http://github.us12.list-manage.com/unsubscribe?u=bf693d7fc1edc4b69e240d26e&id=9e419f8045
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:year/:month/:day/:title/
