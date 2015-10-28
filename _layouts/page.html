@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+    <header class="post-header">
+            {% if site.logo %}
+                <a id="blog-logo" href="/">
+                    <img src="{{site.logo}}" alt="{{ site.name }}" />
+                </a>
+            {% else %}
+                <span class="blog-title">
+                    &#171; <a id="blog-logo" href="/">{{ site.name }}</a>
+                </span>
+            {%endif%} 
+        </a>
+    </header>
+    <article class="post">
+        <h1 class="post-title">{{ page.head }}</h1>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+    </article>
+
+</main>

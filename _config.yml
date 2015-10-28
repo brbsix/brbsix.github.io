@@ -1,0 +1,48 @@
+name: radek.io
+title: Radek Pazdera
+description: "by Radek Pazdera"
+meta_description: "Programming, open-source and tech."
+
+markdown: kramdown
+highligher: true
+paginate: 100
+timezone: UK/London
+future:   true
+
+# Details for the RSS feed generator
+url:            'http://radek.io'
+baseurl:        '/'
+author:         'Radek Pazdera'
+
+email:          'me@radek.io'
+twitter:        'radekpazdera'
+github:         'pazdera'
+linkedin:       'pazdera'
+gplus:          '+RadekPazdera'
+
+disqus_shortname: linuxwell
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:year/:month/:day/:title/
+
+exclude:
+  - "bower_components"
+  - "bower.json"
+  - "node_modules"
+  - "package.json"
+  - "gulpfile.js"
+
+gems:
+  - 'jekyll-paginate'
+
+collections:
+  short_urls:
+    output: true
+    permalink: '/p/:path/'
+
+defaults:
+  - scope:
+      path: ""
+      type: short_urls
+    values:
+      layout: redirect

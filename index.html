@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<header class="site-head">
+    <div class="vertical">
+        <div class="site-head-content" class="inner">
+            <div class="bubble">
+                {% if site.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+                {% endif %}
+                <h1 class="site-title">{{ site.name }}</h1>
+            </div>
+            <div class="bubble-source"></div>
+            <div class="menu">
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="/about">ABOUT</a></li>
+                        <!--<li><a href="#">POSTS</a></li>-->
+                        <li><a href="/newsletter">NEWSLETTER</a></li>
+                        <li><a href="/work">WORK</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+    {% for post in paginator.posts %}
+    <article class="post-link">
+        <header class="post-link-header">
+            {% if post.short_title %}
+                <h2 class="post-link-title"><a href="{{ post.url}}">{{ post.short_title }}</a></h2>
+            {% else %}
+                <h2 class="post-link-title"><a href="{{ post.url}}">{{ post.title }}</a></h2>
+            {% endif %}
+            <span class="post-link-meta"><time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+        </header>
+    </article>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+        <nav class="pagination" role="pagination">
+            {% if paginator.previous_page %}
+              {% if paginator.previous_page == 1 %}
+              <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
+              {% else %}
+              <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
+              {% endif %}
+            {% endif %}
+
+            <span class="page-number">
+              Page {{paginator.page}} of {{paginator.total_pages}}
+            </span>
+
+            {% if paginator.next_page %} 
+            <a class="older-posts" href="/page{{ paginator.next_page }}/"
+               title="Next Page">
+              Older Posts &raquo;
+            </a>
+            {% endif %}
+        </nav>
+    {% endif %}
+</main>

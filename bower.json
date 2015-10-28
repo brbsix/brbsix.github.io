@@ -1,0 +1,20 @@
+{
+  "name": "radek-io",
+  "version": "1.0.0",
+  "homepage": "http://radek.io",
+  "authors": [
+    "Radek Pazdera <me@radek.io>"
+  ],
+  "description": "My personal website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

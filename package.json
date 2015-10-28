@@ -1,0 +1,24 @@
+{
+  "name": "radek-io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pazdera/pazdera.github.io.git"
+  },
+  "author": "Radek Pazdera <me@radek.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pazdera/pazdera.github.io/issues"
+  },
+  "homepage": "https://github.com/pazdera/pazdera.github.io",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "main-bower-files": "^2.8.0",
+    "browser-sync": "^2.7.3"
+  }
+}
