@@ -1,8 +1,13 @@
-_site
+Gemfile.lock
+
+.bundle/
+_site/
+vendor/
+
+# previous items
 .DS_Store
 *.swp
 *.swo
 .jekyll-metadata
-node_modules
 bower_components
-.*
+node_modules
