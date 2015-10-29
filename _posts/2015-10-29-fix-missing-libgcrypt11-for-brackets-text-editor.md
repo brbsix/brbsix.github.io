@@ -39,7 +39,7 @@ Once you're ready, here are the steps:
 
 In case it's not clear what is being done, I'm simply removing the dependence on libgcrypt11 and including the library in the package. You should also note that the [Atom](https://atom.io/) text editor bundles *libgcrypt.so.11* in the same way.
 
-Brackets' dependency on libgcrypt11 is due to [brackets-shell](https://github.com/adobe/brackets-shell)'s use of the [Chromium Embedded Frameword (CEF)](https://bitbucket.org/chromiumembedded/cef), a framework for embedding Chromium-based browsers in other applications. The Linux release of Brackets currently uses CEF 1547, a somewhat ancient branch. The Brackets dev team has been [in the process of migrating to CEF 2171][3] (which depends on libgcrypt20) for quite some time, but there appear to be a number of issues.
+Brackets' dependency on libgcrypt11 is due to [brackets-shell](https://github.com/adobe/brackets-shell)'s use of the [Chromium Embedded Framework (CEF)](https://bitbucket.org/chromiumembedded/cef), a framework for embedding Chromium-based browsers in other applications. The Linux release of Brackets currently uses CEF 1547, a somewhat ancient branch. The Brackets dev team has been [in the process of migrating to CEF 2171][3] (which depends on libgcrypt20) for quite some time, but there appear to be a number of issues.
 
 Once the new CEF has been integrated successfully, developers may want to entertain the thought of dependence on the distribution's libgcrypt20 package. Until then, I propose bundling *libgcrypt.so.11* with the package.
 
