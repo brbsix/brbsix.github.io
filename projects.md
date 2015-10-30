@@ -64,8 +64,6 @@ permalink: /projects/
     </ul>
 </div>
 
-<a href="https://broken-link.sf873hjas8adsd2qada.com">.</a>
-
 <footer class="post-footer">
     {% include signature.html %}
 </footer>
