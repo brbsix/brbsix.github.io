@@ -3,6 +3,15 @@ layout: post
 title: Fix missing libgcrypt11 for Brackets text editor
 date: 2015-10-29 02:05:33
 comments: true
+categories:
+- Programming
+- Software
+- Tools
+tags:
+- Debian
+- Ubuntu
+- web development
+- open source
 ---
 
 *Note: This problem appears to be fairly widespread of late. There is an [issue][1] on the Brackets GitHub repository as well as an [article][2] on WebUpd8 discussing the topic.*
