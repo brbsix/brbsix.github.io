@@ -40,7 +40,6 @@ exclude:
 
 gems:
   - 'jekyll-paginate'
-  - 'jekyll-sitemap'
 
 collections:
   short_urls:
