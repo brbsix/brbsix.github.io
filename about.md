@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <figure style="width: 35%; float: left; margin-top: 1em;">
-	<a href="/assets/images/avatar.png">
+    <a href="/assets/images/avatar.png">
         <img src="/assets/images/avatar.png" alt="Me">
     </a>
 </figure>
