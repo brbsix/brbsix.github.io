@@ -38,9 +38,13 @@ compress_html:
 exclude:
   - 'bower_components'
   - 'bower.json'
+  - 'Gemfile'
+  - 'Gemfile.lock'
   - 'gulpfile.js'
+  - 'LICENSE'
   - 'node_modules'
   - 'package.json'
+  - 'README.md'
   - 'vendor'
 
 gems:
