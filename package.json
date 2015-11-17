@@ -1,5 +1,5 @@
 {
-  "name": "radek-io",
+  "name": "brbsix-github-io",
   "version": "1.0.0",
   "description": "My personal website",
   "main": "_site/index.html",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pazdera/pazdera.github.io.git"
+    "url": "git://github.com/brbsix/brbsix.github.io.git"
   },
-  "author": "Radek Pazdera <me@radek.io>",
+  "author": "Brian Beffa <brbsix@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pazdera/pazdera.github.io/issues"
+    "url": "https://github.com/brbsix/brbsix.github.io/issues"
   },
-  "homepage": "https://github.com/pazdera/pazdera.github.io",
+  "homepage": "https://github.com/brbsix/brbsix.github.io",
   "devDependencies": {
     "gulp": "^3.8.11",
     "main-bower-files": "^2.8.0",

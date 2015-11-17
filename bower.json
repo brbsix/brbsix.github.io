@@ -1,9 +1,9 @@
 {
-  "name": "radek-io",
+  "name": "brbsix-github-io",
   "version": "1.0.0",
-  "homepage": "http://radek.io",
+  "homepage": "https://brbsix.github.io/",
   "authors": [
-    "Radek Pazdera <me@radek.io>"
+    "Brian Beffa <brbsix@gmail.com>"
   ],
   "description": "My personal website",
   "license": "MIT",
