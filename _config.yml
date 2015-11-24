@@ -4,6 +4,9 @@ description: 'by Six'
 meta_description: 'open source life'
 
 markdown: kramdown
+kramdown:
+  input: GFM  # Enable GitHub Flavored Markdown (fenced code blocks)
+
 highligher: true
 paginate: 100
 timezone: America/Los_Angeles
