@@ -975,8 +975,8 @@ margin on the iframe, cause it breaks stuff. */
     color: #FFFFFF;
 }
 
-.site-footer .copyright, .site-footer .poweredby {
-    color: #555;
+.site-footer .copyright, .site-footer .poweredby, .site-footer a {
+    color: #808080;
     font-size: 1.22rem;
 }
 
