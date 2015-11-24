@@ -39,7 +39,7 @@ mailchimp:
 
 compress_html:
   clippings: all
-  comments:  ["<!-- ", " -->"]
+  comments:  ['<!-- ', ' -->']
   endings:   all
 
 exclude:
