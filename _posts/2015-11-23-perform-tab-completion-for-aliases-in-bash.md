@@ -114,6 +114,6 @@ Note that all of the aforementioned code is only useful for simple aliases like 
 
 More complex aliases involving option flags or pipes require wrapper functions and are beyond the scope of this article. For more information on setting up programmable completion for these sorts of aliases, see:
 
-* https://superuser.com/a/437508/376111
-* http://stackoverflow.com/a/1793178/4117209
-* http://ubuntuforums.org/showthread.php?t=733397
+* [https://superuser.com/a/437508/376111](https://superuser.com/a/437508/376111)
+* [http://stackoverflow.com/a/1793178/4117209](http://stackoverflow.com/a/1793178/4117209)
+* [http://ubuntuforums.org/showthread.php?t=733397](http://ubuntuforums.org/showthread.php?t=733397)
