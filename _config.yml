@@ -3,15 +3,16 @@ title: brbsix.github.io
 description: 'by Six'
 meta_description: 'open source life'
 
-# markdown: kramdown
-# kramdown:
-#   input: GFM  # Enable GitHub Flavored Markdown (fenced code blocks)
+markdown: kramdown
+kramdown:
+  input: GFM  # Enable GitHub Flavored Markdown (fenced code blocks)
+highlighter: pygments
 
-markdown: redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'strikethrough', 'superscript', 'with_toc_data']
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ['smart', 'tables', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'strikethrough', 'superscript', 'with_toc_data']
+# highlighter: true
 
-highlighter: true
 paginate: 100
 timezone: America/Los_Angeles
 future: true
