@@ -61,7 +61,7 @@ This is what all of this would look like in a *.bashrc* or *.bash_aliases*.
 
 Just out of curiosity, let's see how we could do this a bit more programmatically.
 
-~~~ bash
+{% highlight bash %}
 alias_completion(){
     # keep global namespace clean
     local cmd completion
@@ -102,7 +102,7 @@ done
 
 # clean up after ourselves
 unset a aliases
-~~~
+{% endhighlight %}
 
 ### Complexity
 
