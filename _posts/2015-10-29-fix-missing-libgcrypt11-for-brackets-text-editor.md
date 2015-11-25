@@ -54,6 +54,8 @@ Once the new CEF has been integrated successfully, developers may want to entert
 
 ---
 
+## Downloads
+
 For people who would like to skip the above steps, I've repackaged the official releases and made them available below:
 
 **Release 1.5 + Extract bundle**
