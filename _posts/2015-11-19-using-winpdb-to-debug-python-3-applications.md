@@ -53,4 +53,4 @@ From your local machine, launch the GUI and attach to the debugged script. You s
 
     winpdb --attach --host=HOST SCRIPT
 
-Note there is also an `--encrypt` option to force *encrypted socket communication*. It requires the *python-cryto* package. I wasn't able to get this to work but your experience may vary. I didn't look into any further.
+Note there is also an `--encrypt` option to force *encrypted socket communication*. It requires the *python-crypto* package. I wasn't able to get this to work but your experience may vary. I didn't look into any further.
