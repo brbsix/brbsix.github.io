@@ -2,6 +2,7 @@ name: brbsix.github.io
 title: brbsix.github.io
 description: 'by Six'
 meta_description: 'open source life'
+force-https: true
 
 markdown: kramdown
 kramdown:
