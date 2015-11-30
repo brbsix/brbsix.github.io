@@ -53,7 +53,7 @@ F.Y.I. the aforementioned command is equivalent to the following:
 
 This is what all of this would look like in a *.bashrc* or *.bash_aliases*.
 
-**Note:** Ensure programmable completion is sourced before the following code. If you see an error like *_completion_loader: command not found*, you'll want to move the programmable completion portion of *.bashrc* above the alias definitions.
+**Note:** Ensure programmable completion is sourced before the following code. If you see an error like *_completion_loader: command not found*, you'll want to move the programmable completion portion of *.bashrc* above the alias definitions. Alternatively you can manually source it by running `source /usr/share/bash-completion/bash_completion`.
 
     alias g=git
     _completion_loader git
@@ -71,14 +71,17 @@ alias_completion(){
     #       readline's shell-expand-line or alias-expand-line?
     cmd=$(alias "$1" | sed 's/^alias .*='\''//;s/\( .\+\|'\''\)//')
 
-    # only run _completion_loader if absolutely necessary
-    completion=$(complete -p "$cmd" 2>/dev/null) || {
+    # determine completion function
+    completion=$(complete -p "$1" 2>/dev/null)
+
+    # run _completion_loader only if necessary
+    [[ -n $completion ]] || {
 
         # load completion
         _completion_loader "$cmd"
 
         # detect completion
-        completion=$(complete -p "$cmd")
+        completion=$(complete -p "$cmd" 2>/dev/null)
     }
 
     # ensure completion was detected
