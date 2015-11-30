@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bash scripting: Do's and Don'ts"
-date: 2015-11-23 01:08:37
+date: 2015-11-29 20:30:56
 comments: true
 ---
 
