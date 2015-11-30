@@ -38,14 +38,14 @@ In case you're not familiar with Bash completion scripts, they rely on a few env
   <dd>
     The current command line.
     <br>
-    <small><emp>Note: While rarely accessed directly, this is used by common helper scripts (albeit indirectly).</emp></small>
+    <small><em>Note: While rarely accessed directly, this is used by common helper scripts (albeit indirectly).</em></small>
   </dd>
 
   <dt>COMP_POINT</dt>
   <dd>
     The index of the current cursor position relative to the  beginning of the current command. If the current cursor position is at the end of the current command, the value of this variable is equal to <strong>${#COMP_LINE}</strong>.
     <br>
-    <small><emp>Note: While rarely accessed directly, this is used by common helper scripts (albeit indirectly).</emp></small>
+    <small><em>Note: While rarely accessed directly, this is used by common helper scripts (albeit indirectly).</em></small>
   </dd>
 
   <dt>COMPREPLY</dt>
