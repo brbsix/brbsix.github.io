@@ -239,4 +239,34 @@ Don't use `$` on variables in `$((...))` or `((...))`. E.g. `(( $var == 1 ))` wi
 
 </div>
 
+<div class="project" markdown="1">
+
+**Don't:**
+
+{% highlight bash %}
+somefunction(){
+    if local variable=$(command); then
+        ...
+    fi
+}
+{% endhighlight %}
+
+**Do:**
+
+{% highlight bash %}
+somefunction(){
+    local variable
+
+    if variable=$(command); then
+        ...
+    fi
+}
+{% endhighlight %}
+
+**Why:**
+
+The return status of `local [option] [name[=value] ...]` is 0 unless `local` is used outside a function, an invalid <u>name</u> is supplied, or <u>name</u> is a readonly variable.
+
+</div>
+
 For even more egregious examples of bad code, check out shellcheck's [Gallery of Bad Code](https://github.com/koalaman/shellcheck#gallery-of-bad-code). While you're at it, consider linting your shell scripts with [shellcheck](https://github.com/koalaman/shellcheck).
