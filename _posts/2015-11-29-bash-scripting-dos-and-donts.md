@@ -197,7 +197,7 @@ Useless use of `echo`. We can use a *HERE string* and avoid calling an unnecessa
 
 `"$@"` expands each positional parameter to a separate word.
 
-E.g. With a default IFS and positional parameters of `$1=one`, `$2=two`, `$3=three`, `"$*"` expands to `'one two three'` whereas `"$@"` expands to `'one' 'two' 'three'`.
+For example, with a default IFS and positional parameters of `$1=one`, `$2=two`, `$3=three`, `"$*"` expands to `'one two three'` whereas `"$@"` expands to `'one' 'two' 'three'`.
 
 While `echo "$@"` and `echo "$*"` happen to have the same effect, with other commands this won't always be the case. There are times when you'll need to be aware of this.
 
@@ -217,7 +217,7 @@ or
 
 **Why:**
 
-The `>` operator in `[[ $# > 0 ]]` performs a string comparison, not a numerical one! E.g. `[[ string1 > string2 ]]` is true if `string1` sorts after `string2` lexicographically. Instead, use one of `-eq`, `-ne`, `-lt`, `-le`, `-gt`, or `-ge`. These arithmetic binary operators return true if `arg1` is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to `arg2`, respectively. `arg1` and `arg2` may be positive or negative integers.
+The `>` operator in `[[ $# > 0 ]]` performs a string comparison, not a numerical one! `[[ string1 > string2 ]]` is true if `string1` sorts after `string2` lexicographically. Instead, use one of `-eq`, `-ne`, `-lt`, `-le`, `-gt`, or `-ge`. These arithmetic binary operators return true if `arg1` is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to `arg2`, respectively. `arg1` and `arg2` may be positive or negative integers.
 
 Alternatively, use `((...))` for arithmetic evaluation.
 
@@ -235,7 +235,9 @@ Alternatively, use `((...))` for arithmetic evaluation.
 
 **Why:**
 
-Don't use `$` on variables in `$((...))` or `((...))`. E.g. `(( $var == 1 ))` will break when `$var` is null or unset.
+Don't use `$` on variables in `$((...))` or `((...))`.
+
+For example, `(( $var == 1 ))` will break when `$var` is null or unset.
 
 </div>
 
