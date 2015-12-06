@@ -38,10 +38,10 @@ mailchimp:
   subscribe: //github.us12.list-manage.com/subscribe/post?u=bf693d7fc1edc4b69e240d26e&amp;id=9e419f8045
   unsubscribe: http://github.us12.list-manage.com/unsubscribe?u=bf693d7fc1edc4b69e240d26e&amp;id=9e419f8045
 
-compress_html:
-  clippings: all
-  comments:  ['<!-- ', ' -->']
-  endings:   all
+# compress_html:
+#   clippings: all
+#   comments:  ['<!-- ', ' -->']
+#   endings:   all
 
 exclude:
   - 'bower_components'
