@@ -109,7 +109,7 @@ done
 
 **Why:**
 
-Bash has arrays, use them! Also, they will not break if array items contain spaces or newlines.
+Bash has arrays, use them! Also, they will not break if individual items contain spaces or newlines.
 
 </div>
 
