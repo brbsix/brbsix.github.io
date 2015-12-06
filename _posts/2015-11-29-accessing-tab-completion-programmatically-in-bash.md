@@ -134,7 +134,7 @@ get_completions(){
     "$completion"
 
     # print completions to stdout
-    printf '%s\n' "${COMPREPLY[@]}" | sort
+    printf '%s\n' "${COMPREPLY[@]}" | LC_ALL=C sort
 }
 
 {% endhighlight %}
