@@ -161,7 +161,9 @@ Feel free to ignore this advice if you have a difficult time remembering quoting
 
 Useless use of `cat`.
 
-`cat`'s description is as follows: *Concatenate FILE(s), or standard input, to standard output.* If you're using `cat` for some other purpose then you probably shouldn't be using it.
+`cat`'s description is as follows:<br>*Concatenate FILE(s), or standard input, to standard output.*
+
+If you're using `cat` for some other purpose then you probably shouldn't be using it.
 
 </div>
 
