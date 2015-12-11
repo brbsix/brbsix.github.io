@@ -63,9 +63,6 @@ Here's a very simple implementation:
 # load bash-completion helper functions
 source /usr/share/bash-completion/bash_completion
 
-# load git's completion script (which is normally loaded dynamically)
-_completion_loader git
-
 # array of words in command line
 COMP_WORDS=(git a)
 
@@ -79,7 +76,9 @@ COMP_LINE='git a'
 COMP_POINT=${#COMP_LINE}
 
 # execute completion function
-_git
+# FYI: _xfunc is a helper function for loading and calling functions from
+#      dynamically loaded completion files that may not have been sourced yet
+_xfunc git _git
 
 # print completions to stdout
 printf '%s\n' "${COMPREPLY[@]}"
