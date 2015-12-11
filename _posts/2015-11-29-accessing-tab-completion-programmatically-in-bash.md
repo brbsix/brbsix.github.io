@@ -95,7 +95,7 @@ get_completions(){
     local completion COMP_CWORD COMP_LINE COMP_POINT COMP_WORDS COMPREPLY=()
 
     # load bash-completion if necessary
-    type _completion_loader &>/dev/null || {
+    declare -F _completion_loader &>/dev/null || {
         source /usr/share/bash-completion/bash_completion
     }
 
