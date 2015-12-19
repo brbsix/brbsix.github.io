@@ -72,7 +72,7 @@ done < <(find)
 **Do:**
 
 {% highlight bash %}
-while IFS= read -rd $'\0' path; do
+while read -rd $'\0' path; do
     ...
 done < <(find -print0)
 {% endhighlight %}
