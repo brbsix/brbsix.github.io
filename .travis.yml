@@ -5,4 +5,4 @@ rvm:
   - 2.2.3
 
 script:
-  - bundler exec jekyll build && bundler exec htmlproof --check-external-hash --check-favicon --check-html --url-ignore '#,/^https://github.com/[^/]+/[^/]+/issues/[1-9][0-9]+$/' _site/
+  - bundler exec jekyll build && bundler exec htmlproof --check-external-hash --check-favicon --check-html --url-ignore '#' _site/
