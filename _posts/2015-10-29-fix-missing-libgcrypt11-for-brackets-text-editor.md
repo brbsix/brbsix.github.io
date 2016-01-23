@@ -30,21 +30,21 @@ Once you're ready, here are the steps:
 
 1. Unpack Brackets
 
-        debtool -u ./Brackets.1.5.Extract.64-bit.deb
+        debtool -u ./Brackets.1.6.Extract.64-bit.deb
 
 2. Remove the package's dependence on libgcrypt11
 
-        sed -i 's/ libgcrypt11 (>= [0-9.]\+),//' ./brackets_1.5.0-16538_amd64/DEBIAN/control
+        sed -i 's/ libgcrypt11 (>= [0-9.]\+),//' ./brackets_1.6.0-16680_amd64/DEBIAN/control
 
 3. Copy the library into the unpacked package directory
 
-        cp ~/Downloads/libgcrypt.so.11 ./brackets_1.5.0-16538_amd64/opt/brackets/
+        cp ~/Downloads/libgcrypt.so.11 ./brackets_1.6.0-16680_amd64/opt/brackets/
 
 4. Rebuild the package
 
-        debtool -b ./brackets_1.5.0-16538_amd64/
+        debtool -b ./brackets_1.6.0-16680_amd64/
 
-5. Install *brackets_1.5.0-16538_amd64.deb* (the newly created package)
+5. Install *brackets_1.6.0-16680_amd64.deb* (the newly created package)
 
 In case it's not clear what is being done, I'm simply removing the dependence on libgcrypt11 and including the library in the package. You should also note that the [Atom](https://atom.io/) text editor bundles *libgcrypt.so.11* in the same way.
 
@@ -57,6 +57,17 @@ Once the new CEF has been integrated successfully, developers may want to entert
 ## Downloads
 
 For people who would like to skip the above steps, I've repackaged the official releases and made them available below:
+
+**Release 1.6 + Extract bundle**
+
+* [Brackets.1.6.Extract.64-bit.deb](https://www.dropbox.com/s/2k5ym33v9qchin1/Brackets.1.6.Extract.64-bit.deb?dl=1)
+* [Brackets.1.6.Extract.32-bit.deb](https://www.dropbox.com/s/4gwp4elj6f99m5j/Brackets.1.6.Extract.32-bit.deb?dl=1)
+
+**Release 1.6**
+
+* [Brackets.Release.1.6.64-bit.deb](https://www.dropbox.com/s/6gllagx95tm1xmp/Brackets.Release.1.6.64-bit.deb?dl=1)
+* [Brackets.Release.1.6.32-bit.deb](https://www.dropbox.com/s/ortzy9aqkw02tb4/Brackets.Release.1.6.32-bit.deb?dl=1)
+
 
 **Release 1.5 + Extract bundle**
 
