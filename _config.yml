@@ -4,7 +4,7 @@ description: 'by Six'
 meta_description: 'open source life'
 force-https: true
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM  # Enable GitHub Flavored Markdown (fenced code blocks)

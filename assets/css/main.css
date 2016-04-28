@@ -38,7 +38,7 @@ img.profile {
     margin: auto;
 }
 
-figure {
+figure:not(.highlight) {
     display: block;
     width: 100%;
 
@@ -53,8 +53,8 @@ figure {
     padding-bottom: 10px;
     *zoom: 1;
 }
-figure:before,
-figure:after {
+figure:not(.highlight):before,
+figure:not(.highlight):after {
     display: table;
     content: "";
     line-height: 0;
