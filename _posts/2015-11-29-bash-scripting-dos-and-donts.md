@@ -177,7 +177,7 @@ If you're using `cat` for some other purpose then you probably shouldn't be usin
 
 **Why:**
 
-We can use a *HERE string* and avoid calling an unnecessary command or builtin.
+Though either is perfectly acceptable, we can use a *HERE string* and avoid calling an unnecessary command or builtin.
 
 </div>
 
