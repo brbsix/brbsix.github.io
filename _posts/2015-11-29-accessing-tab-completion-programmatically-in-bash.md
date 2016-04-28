@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Accessing tab-completion programmatically in Bash
-date: 2015-11-29 07:04:27
 comments: true
 ---
 

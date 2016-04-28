@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Using Winpdb to debug Python 3 applications
-date: 2015-11-19 15:45:49
 comments: true
 ---
 

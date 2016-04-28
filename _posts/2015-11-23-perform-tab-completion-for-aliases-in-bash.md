@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Perform tab-completion for aliases in Bash
-date: 2015-11-23 07:03:08
 comments: true
 ---
 

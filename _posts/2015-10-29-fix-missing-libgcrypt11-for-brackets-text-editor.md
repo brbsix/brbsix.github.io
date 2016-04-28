@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Fix missing libgcrypt11 for Brackets text editor
-date: 2015-10-29 02:05:33
 comments: true
 categories:
 - Programming

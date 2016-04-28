@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Trouble with galternatives in Trusty
-date: 2015-10-27 08:37:55
 comments: true
 ---
 
