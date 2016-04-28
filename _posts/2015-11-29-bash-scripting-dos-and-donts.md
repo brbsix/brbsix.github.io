@@ -271,4 +271,36 @@ The return status of `local [option] [name[=value] ...]` is 0 unless `local` is 
 
 </div>
 
+<div class="project" markdown="1">
+
+**Don't:**
+
+{% highlight bash %}
+options=
+
+if something; then
+    options=--flag
+fi
+
+somecommand "$options"
+{% endhighlight %}
+
+**Do:**
+
+{% highlight bash %}
+options=()
+
+if something; then
+    options=(--flag)
+fi
+
+somecommand "${options[@]}"
+{% endhighlight %}
+
+**Why:**
+
+If `$options` is empty, it will pass `somecommand` an empty argument, which will almost always be undesired. Alternatively, if the array `${option[@]}` is empty, it will pass no arguments to `somecommand`, not even an empty one.
+
+</div>
+
 For even more egregious examples of bad code, check out shellcheck's [Gallery of Bad Code](https://github.com/koalaman/shellcheck#gallery-of-bad-code). While you're at it, consider linting your shell scripts with [shellcheck](https://github.com/koalaman/shellcheck).
