@@ -9,14 +9,12 @@ What follows is a style guide of sorts, outlining a few "gotcha's" and anti-patt
 
 *Note: If you're worried about supporting POSIX, ancient versions of Bash, or other shells, you can promptly ignore everything on this page.*
 
----
-
 <div class="project" markdown="1">
 
 **Don't:**
 
 {% highlight bash %}
-for i in $(command); do
+for i in $(somecommand); do
     ...
 done
 {% endhighlight %}
@@ -26,7 +24,7 @@ done
 {% highlight bash %}
 while IFS= read -r i; do
     ...
-done < <(command)
+done < <(somecommand)
 {% endhighlight %}
 
 **Why:**
@@ -40,7 +38,7 @@ The `for` loop uses a space as a delimiter whereas the `while` loop uses a newli
 **Don't:**
 
 {% highlight bash %}
-command | while IFS= read -r i; do
+somecommand | while IFS= read -r i; do
     ...
 done
 {% endhighlight %}
@@ -50,7 +48,7 @@ done
 {% highlight bash %}
 while IFS= read -r i; do
     ...
-done < <(command)
+done < <(somecommand)
 {% endhighlight %}
 
 **Why:**
@@ -81,7 +79,7 @@ done < <(find -print0)
 
 Using a null byte as a delimiter is generally preferred wherever possible.
 
-Also note that a `while` loop isn't necessary in order to iterate over the output of `find`. For simple operations, you can simply use `find -exec command {} \;` (command is run once for each matched file) or `find -exec command {} +` (the command line is built  by  appending each  selected file name at the end). Alternatively, you can pipe the output to `xargs -0`.
+Also note that a `while` loop isn't necessary in order to iterate over the output of `find`. For simple operations, you can simply use `find -exec somecommand {} \;` (command is run once for each matched file) or `find -exec somecommand {} +` (the command line is built  by  appending each  selected file name at the end). Alternatively, you can pipe the output to `xargs -0`.
 
 </div>
 
@@ -117,11 +115,11 @@ Bash has arrays, use them! Also, they will not break if individual items contain
 
 **Don't:**
 
-{% highlight bash %} lines=($(command)) {% endhighlight %}
+{% highlight bash %} lines=($(somecommand)) {% endhighlight %}
 
 **Do:**
 
-{% highlight bash %} readarray -t lines < <(command) {% endhighlight %}
+{% highlight bash %} readarray -t lines < <(somecommand) {% endhighlight %}
 
 **Why:**
 
@@ -171,11 +169,11 @@ If you're using `cat` for some other purpose then you probably shouldn't be usin
 
 **Don't:**
 
-{% highlight bash %} echo "$something" | command {% endhighlight %}
+{% highlight bash %} echo "$something" | somecommand {% endhighlight %}
 
 **Do:**
 
-{% highlight bash %} command <<<"$something" {% endhighlight %}
+{% highlight bash %} somecommand <<<"$something" {% endhighlight %}
 
 **Why:**
 
@@ -249,7 +247,7 @@ For example, `(( $var == 1 ))` will break when `$var` is null or unset.
 
 {% highlight bash %}
 somefunction(){
-    if local variable=$(command); then
+    if local variable=$(somecommand); then
         ...
     fi
 }
@@ -261,7 +259,7 @@ somefunction(){
 somefunction(){
     local variable
 
-    if variable=$(command); then
+    if variable=$(somecommand); then
         ...
     fi
 }
