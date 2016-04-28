@@ -177,7 +177,7 @@ If you're using `cat` for some other purpose then you probably shouldn't be usin
 
 **Why:**
 
-Useless use of `echo`. We can use a *HERE string* and avoid calling an unnecessary command.
+We can use a *HERE string* and avoid calling an unnecessary command or builtin.
 
 </div>
 
