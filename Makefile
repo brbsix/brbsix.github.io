@@ -16,10 +16,10 @@ serve-mobile:
 	bundler exec jekyll serve --watch --host=0.0.0.0
 
 serve-all:
-	bundler exec jelyll serve --drafts --future --unpublished --watch
+	bundler exec jekyll serve --drafts --future --unpublished --watch
 
 serve-all-mobile:
-	bundler exec jelyll serve --drafts --future --unpublished --watch --host=0.0.0.0
+	bundler exec jekyll serve --drafts --future --unpublished --watch --host=0.0.0.0
 
 test:
 	make build && make test-only
